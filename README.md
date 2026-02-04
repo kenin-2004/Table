@@ -32,10 +32,11 @@ A high-performance data table built with React that supports sorting, filtering,
 ```bash
 git clone <your-repo-url>
 cd project-folder
-```
+
 
 
 ## 2. Install Dependencies
+ 
 npm install
 
 ## 3. Install Tailwind
@@ -59,6 +60,7 @@ npm install @tanstack/react-virtual
 
 ## 7. Run The Project
 npm run dev
+```
 
 ## Project Structure
 src/

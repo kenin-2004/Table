@@ -20,6 +20,7 @@ const Datatable = ({ columns, data, sortOrder }) => {
    // SORTING, usememo - prevents re-sorting every render 
 
   const sortedData = useMemo(() => {
+    // copying data bcz sort mutates og array
     let temp = [...data];
 
     if (!sortOrder) return temp;
@@ -35,7 +36,7 @@ const Datatable = ({ columns, data, sortOrder }) => {
         return sortOrder === "asc" ? A - B : B - A;
       }
 
-    
+    // if column is string 
       return sortOrder === "asc" ? A.localeCompare(B) : B.localeCompare(A);
     });
 
@@ -103,7 +104,7 @@ const Datatable = ({ columns, data, sortOrder }) => {
             {columns.map((col) => (
               <th key={col.key} className="px-2 py-1  ">
                 <input
-                  className="w-full px-1 text-white text-sm  outline-none"
+                  className="w-full px-1 text-white  text-sm  "
                   placeholder={`Search ${col.label}`}
                   value={filters[col.key]}
                   onChange={(e) => handleFilter(col.key, e.target.value)}
