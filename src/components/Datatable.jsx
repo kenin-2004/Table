@@ -118,9 +118,10 @@ const Datatable = ({ columns, data, sortOrder }) => {
       {/* SCROLL AREA */}
       <div
         ref={parentRef}
+        className="overflow-y-auto"
         style={{
           height: "500px",
-          overflowY: "auto",
+          
         }}
       >
         {/* fake height create illusion of full height */}

@@ -32,17 +32,20 @@ A high-performance data table built with React that supports sorting, filtering,
 ```bash
 git clone <your-repo-url>
 cd project-folder
-
+```
 
 
 ## 2. Install Dependencies
- 
+ ```bash
 npm install
+```
 
 ## 3. Install Tailwind
+```bash
 npm install tailwindcss @tailwindcss/vite
-
+```
 ## 4. update Vite.config.js
+```bash
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
@@ -51,14 +54,17 @@ export default defineConfig({
     tailwindcss(),
   ],
 })
-
+```
 ## 5. Update CSS file
+```bash
 @import "tailwindcss"
-
+```
 ## 6. Install Virtual Scroll Library
+```bash
 npm install @tanstack/react-virtual
-
+```
 ## 7. Run The Project
+```bash
 npm run dev
 ```
 
